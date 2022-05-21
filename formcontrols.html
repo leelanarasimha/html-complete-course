@@ -10,7 +10,11 @@
     <form>
       <p>
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" value="I am a text field" />
+        <input type="text" id="name" name="name" size="10" value="I am a text field" spellcheck="true" />
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Enter email" autofocus="true" maxlength="2" />
       </p>
       <p>
         <label>Password:</label>
@@ -18,6 +22,7 @@
       </p>
 
       <input type="hidden" name="timestamp" value="hidden data" />
+
       <button type="submit">Submit</button>
     </form>
   </body>
