@@ -23,6 +23,43 @@
 
       <input type="hidden" name="timestamp" value="hidden data" />
 
+      <fieldset>
+        <legend>Choose all the vegetable you like to eat?</legend>
+
+        <ul>
+          <li>
+            <input type="checkbox" name="vegetable" value="carrots" id="carrots" readonly />
+            <label for="carrots">Carrots</label>
+          </li>
+          <li>
+            <input type="checkbox" name="vegetable" value="peas" id="peas" checked disabled />
+            <label for="peas">Peas</label>
+          </li>
+          <li>
+            <input type="checkbox" name="vegetable" value="cabbage" id="cabbage" checked />
+            <label for="cabbage">Cabbage</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>What is your favorite meal?</legend>
+        <ul>
+          <li>
+            <input type="radio" id="soup" name="meal" value="soup" />
+            <label for="soup">Soup</label>
+          </li>
+          <li>
+            <input type="radio" id="curry" name="meal" value="curry" disabled />
+            <label for="curry">Curry</label>
+          </li>
+          <li>
+            <input type="radio" id="pizza" name="meal" value="pizza" />
+            <label for="pizza">pizza</label>
+          </li>
+        </ul>
+      </fieldset>
+
       <button type="submit">Submit</button>
     </form>
   </body>
