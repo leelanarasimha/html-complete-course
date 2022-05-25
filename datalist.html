@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>DataList</legend>
+        <!-- <p>
+          <label for="fruit">What is your favorite fruit?</label>
+          <input type="text" id="fruit" name="fruit" list="suggestion" />
+
+          <datalist id="suggestion">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Blackberry</option>
+            <option>Blueberry</option>
+            <option>Lemon</option>
+            <option>Pear</option>
+          </datalist>
+        </p> -->
+        <p>
+          <label for="fruit">What is your favorite fruit? (with fallback)</label>
+          <input type="text" id="fruit" name="fruit" list="suggestion" />
+
+          <datalist id="suggestion">
+            <label for="altfruit"> or pick a fruit?</label>
+            <select id="altfruit">
+              <option>Apple</option>
+              <option>Banana</option>
+              <option>Blackberry</option>
+              <option>Blueberry</option>
+              <option>Lemon</option>
+              <option>Pear</option>
+            </select>
+          </datalist>
+        </p>
+
+        <p>
+          <input type="range" list="tickmarks" />
+
+          <datalist id="tickmarks">
+            <option label="0%">0</option>
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+            <option>60</option>
+            <option>70</option>
+            <option>80</option>
+            <option>90</option>
+            <option>100</option>
+          </datalist>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
